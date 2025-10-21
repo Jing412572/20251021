@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js 作品集</title>
+    <script src="p5.js"></script> 
+    <script src="sketch.js"></script>
+
+    <style>
+        /* 1. 設定選單容器的樣式和位置 */
+        #menu-container {
+            position: fixed; /* 讓選單固定在視窗位置 */
+            top: 50px;       /* 距離頂部 50 像素 */
+            left: 20px;      /* 距離左邊 20 像素 (將它放在視窗左側) */
+            width: 180px;    /* 選單寬度 */
+            padding: 10px;
+            
+            /* 2. 設定白色和透明度 */
+            background-color: rgba(255, 255, 255, 0.75); /* 白色 (255,255,255)，透明度 75% */
+            border-radius: 8px; /* 圓角 */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 陰影，讓選單看起來更立體 */
+            z-index: 100; /* 確保選單在 p5 畫布之上 */
+        }
+
+        /* 3. 設定選單標題和子項目樣式 */
+        #menu-container h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* 4. 設定子選項樣式 */
+        #menu-container ul {
+            list-style-type: none; /* 移除項目符號 */
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu-container li {
+            padding: 8px 10px;
+            cursor: pointer; /* 顯示為可點擊 */
+            color: #007bff; /* 連結藍色 */
+            transition: background-color 0.3s; /* 平滑過渡效果 */
+        }
+
+        /* 5. 滑鼠懸停效果 */
+        #menu-container li:hover {
+            background-color: rgba(0, 123, 255, 0.1); /* 滑過時淺藍色背景 */
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu-container">
+        <h3>作品選單</h3>
+        <ul>
+            <li id="work-1">作品一</li>
+            <li id="work-2">作品二</li>
+            <li id="work-3">作品三</li>
+        </ul>
+    </div>
+    
+    </body>
+</html>
